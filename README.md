@@ -14,24 +14,16 @@
 - Radio Islamic Channels :Tune in to online radio stations broadcasting Islamic content, including Quranic recitations and religious discussions, for spiritual enrichment and education.
 - Religious reminders: Users can set daily or weekly reminders for performing prayers and other religious acts.
 
-## 🤳 Screens
-
-- **Splash Screen:** Wait for 3 seconds then navigate to `On-Boarding Screens`. 
-- **On-Boarding Screens:** Provide a seamless and engaging introduction to our app.
-- **Home Screen:** The User can discover all tasks that he added before and can change the status to `COMPLETED` or `DELETED`.
-- **Add Task:** User can add task details like `title`, `note`, `date`, `start time`, and `end time`.
-
 ## 📁 Project Structure
+
 
 ## 📱 UI
 
-![2](https://github.com/AmmarAgeeza/mohtdon/assets/72443818/bd589d06-bb71-4010-9899-709ead2d9545)
-
-![3](https://github.com/AmmarAgeeza/mohtdon/assets/72443818/a0583e2a-5a9e-4852-ac85-1bd9ec0d312b)
+![3](https://github.com/asmaaatya/mohtdon/assets/63202068/78039cd4-278e-41c3-84f1-992614027dc7)
 
 ## 🎥 Video
 
-https://github.com/AmmarAgeeza/mohtdon/assets/72443818/47054951-596b-4fe5-9eff-03abf357f8fe
+https://github.com/asmaaatya/mohtdon/assets/63202068/72c3b2d1-0f18-4d3e-ac72-dda6b5cde03f
 
 ## 🛠 Dependencies
 
@@ -45,7 +37,10 @@ https://github.com/AmmarAgeeza/mohtdon/assets/72443818/47054951-596b-4fe5-9eff-0
 - Navigation component
 - Single activity concept
 - ViewBinding
-
+- DataBinding
+- Flow
+- Work manager
+- Exo player
 ## 🚨 Contributing
 
 - Contributions are welcome 💜
