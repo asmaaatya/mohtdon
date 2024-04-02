@@ -7,22 +7,284 @@
 
     <fragment
         android:id="@+id/recitersFragment"
-        android:name="com.example.straterproject.ui.fragments.RecitersFragment"
+        android:name="com.mohtdon.ui.reciters.reciterInfo.RecitersFragment"
         android:label="fragment_reciters"
-        tools:layout="@layout/fragment_reciters" />
+        tools:layout="@layout/fragment_reciters">
+        <action
+            android:id="@+id/action_recitersFragment_to_surahsFragment"
+            app:destination="@id/surahsFragment" />
+
+    </fragment>
     <fragment
         android:id="@+id/fmRadioFragment"
-        android:name="com.example.straterproject.ui.fragments.FmRadioFragment"
+        android:name="com.mohtdon.ui.radio.FmRadioFragment"
         android:label="fragment_fm_radio"
         tools:layout="@layout/fragment_fm_radio" />
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.straterproject.ui.fragments.HomeFragment"
+        android:name="com.mohtdon.ui.home.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_azkarListFragment"
+            app:destination="@id/azkarListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_duaaListFragment"
+            app:destination="@id/duaaListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ayatListFragment"
+            app:destination="@id/ayatListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_qiblaFragment"
+            app:destination="@id/qiblaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_trackerFragment"
+            app:destination="@id/trackerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_hadithCategoryFragment"
+            app:destination="@id/hadithCategoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/quranFragment"
-        android:name="com.example.straterproject.ui.fragments.QuranFragment"
+        android:name="com.mohtdon.ui.quran.quranList.QuranListFragment"
         android:label="QuranFragment"
-        tools:layout="@layout/fragment_quran"/>
+        tools:layout="@layout/fragment_quran_list">
+        <action
+            android:id="@+id/action_quranFragment_to_quranViewPagerFragment"
+            app:destination="@id/quranViewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.mohtdon.ui.more.fragments.MoreFragment"
+        android:label="MoreFragment"
+        tools:layout="@layout/fragment_more">
+        <action
+            android:id="@+id/action_moreFragment_to_qiblaFragment"
+            app:destination="@id/qiblaFragment" />
+        <action
+            android:id="@+id/action_moreFragment_to_namesOfAllahFragment"
+            app:destination="@id/namesOfAllahFragment" />
+        <action
+            android:id="@+id/action_moreFragment_to_shehadaFragment"
+            app:destination="@id/shehadaFragment" />
+        <action
+            android:id="@+id/action_moreFragment_to_rosaryFragment"
+            app:destination="@id/rosaryFragment" />
+        <action
+            android:id="@+id/action_moreFragment_to_hijriCalenderFragment"
+            app:destination="@id/hijriCalenderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranViewPagerFragment"
+        android:name="com.mohtdon.ui.quran.quranViewPager.QuranViewPagerFragment"
+        android:label="fragment_quran_view_pager"
+        tools:layout="@layout/fragment_quran_view_pager">
+        <argument
+            android:name="startPageNum"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_quranViewPagerFragment_to_quranSearchFragment2"
+            app:destination="@id/quranSearchFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/quranPageFragment"
+        android:name="com.mohtdon.ui.quran.quranPage.QuranPageFragment"
+        android:label="QuranPageFragment"
+        tools:layout="@layout/fragment_quran_page" />
+    <fragment
+        android:id="@+id/surahsFragment"
+        android:name="com.mohtdon.ui.reciters.surahs.SurahsFragment"
+        android:label="SurahsFragment">
+
+        <argument
+            android:name="moshaf"
+            app:argType="com.mohtdon.domain.models.reciters.MoshafEnitity" />
+        <action
+            android:id="@+id/action_surahsFragment_to_audioItemControllerFragment"
+            app:destination="@id/audioItemControllerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/audioItemControllerFragment"
+        android:name="com.mohtdon.ui.reciters.player.AudioItemControllerFragment"
+        android:label="AudioItemControllerFragment" />
+    <fragment
+        android:id="@+id/quranSearchFragment"
+        android:name="com.mohtdon.ui.quran.search.fragments.QuranSearchFragment"
+        android:label="QuranSearchFragment"
+        tools:layout="@layout/fragment_quran_search">
+        <action
+            android:id="@+id/action_quranSearchFragment_to_quranViewPagerFragment"
+            app:destination="@id/quranViewPagerFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/quranTabsFragment"
+        android:name="com.mohtdon.ui.quran.quranTaps.QuranTabsFragment"
+        android:label="QuranTabsFragment"
+        tools:layout="@layout/fragment_quran_tabs">
+        <action
+            android:id="@+id/action_quranTabsFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+        <action
+            android:id="@+id/action_quranTabsFragment_to_savedQuranPagesFragment"
+            app:destination="@id/savedQuranPagesFragment" />
+        <action
+            android:id="@+id/action_quranTabsFragment_to_quranViewPagerFragment"
+            app:destination="@id/quranViewPagerFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/savedQuranPagesFragment"
+        android:name="com.mohtdon.ui.quran.savedQuranPages.SavedQuranPagesFragment"
+        android:label="fragment_saved_quran_pages"
+        tools:layout="@layout/fragment_saved_quran_pages">
+
+    </fragment>
+    <fragment
+        android:id="@+id/quranOptionsFragment"
+        android:name="com.mohtdon.ui.quran.QuranOptionsFragment"
+        android:label="QuranOptionsFragment"
+        tools:layout="@layout/fragment_quran_options">
+        <action
+            android:id="@+id/action_quranOptionsFragment_to_quranTabsFragment"
+            app:destination="@id/quranTabsFragment" />
+        <action
+            android:id="@+id/action_quranOptionsFragment_to_recitersFragment"
+            app:destination="@id/recitersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/azkarListFragment"
+        android:name="com.mohtdon.ui.azkar.azkarList.AzkarListFragment"
+        android:label="AzkarListFragment"
+        tools:layout="@layout/fragment_azkar_list">
+        <action
+            android:id="@+id/action_azkarListFragment_to_azkarDetailsFragment"
+            app:destination="@id/azkarDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/azkarDetailsFragment"
+        android:name="com.mohtdon.ui.azkar.azkarDetails.AzkarDetailsFragment"
+        android:label="AzkarDetailsFragment"
+        tools:layout="@layout/fragment_azkar_details">
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/duaaListFragment"
+        android:name="com.mohtdon.ui.duaa.duaaList.DuaaListFragment"
+        android:label="DuaaListFragment"
+        tools:layout="@layout/fragment_duaa_list">
+        <action
+            android:id="@+id/action_duaaListFragment_to_duaaDetailsFragment"
+            app:destination="@id/duaaDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/duaaDetailsFragment"
+        android:name="com.mohtdon.ui.duaa.duaaDetails.DuaaDetailsFragment"
+        android:label="fragment_duaa_details"
+        tools:layout="@layout/fragment_duaa_details">
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/hadithBookChaptersFragment"
+        android:name="com.mohtdon.ui.hadith.hadithBookChapters.HadithBookChaptersFragment"
+        android:label="HadithBookChapters"
+        tools:layout="@layout/fragment_hadith_book_chapters">
+        <action
+            android:id="@+id/action_hadithListFragment_to_hadithDetailsFragment"
+            app:destination="@id/hadithDetailsFragment" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/hadithDetailsFragment"
+        android:name="com.mohtdon.ui.hadith.chapterHadithList.BookChapterHadithList"
+        android:label="HadithDetailsFragment"
+        tools:layout="@layout/item_hadith_details">
+        <argument
+            android:name="chapterNumber"
+            app:argType="integer" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayatListFragment"
+        android:name="com.mohtdon.ui.tafseer.surahList.SurahListFragment"
+        android:label="AyatListFragment"
+        tools:layout="@layout/fragment_ayat_list">
+        <action
+            android:id="@+id/action_surahListFragment_to_ayaTafseerFragment"
+            app:destination="@id/ayaTafseerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayaTafseerFragment"
+        android:name="com.mohtdon.ui.tafseer.surahTafseer.SurahTafseerFragment"
+        android:label="AyaTafseerFragment"
+        tools:layout="@layout/fragment_aya_tafseer">
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/qiblaFragment"
+        android:name="com.mohtdon.ui.qiblaFinder.QiblaFragment"
+        android:label="QiblaFragment"
+        tools:layout="@layout/fragment_qibla" />
+    <fragment
+        android:id="@+id/namesOfAllahFragment"
+        android:name="com.mohtdon.ui.namesOfAllah.fragments.NamesOfAllahFragment"
+        android:label="NamesOfAllahFragment"
+        tools:layout="@layout/fragment_names_of_allah">
+        <action
+            android:id="@+id/action_namesOfAllahFragment_to_nameOfAllahMeaningFragment"
+            app:destination="@id/nameOfAllahMeaningFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameOfAllahMeaningFragment"
+        android:name="com.mohtdon.ui.namesOfAllah.fragments.NameOfAllahMeaningFragment"
+        android:label="NameOfAllahMeaningFragment"
+        tools:layout="@layout/fragment_name_of_allah_meaning">
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/shehadaFragment"
+        android:name="com.mohtdon.ui.shehada.fragments.ShehadaFragment"
+        android:label="ShehadaFragment"
+        tools:layout="@layout/fragment_shehada" />
+    <fragment
+        android:id="@+id/rosaryFragment"
+        android:name="com.mohtdon.ui.sebha.fragments.RosaryFragment"
+        android:label="RosaryFragment"
+        tools:layout="@layout/fragment_rosary" />
+
+    <fragment
+        android:id="@+id/trackerFragment"
+        android:name="com.mohtdon.ui.prayers_tracker.TrackerFragment"
+        android:label="TrackerFragment" />
+    <fragment
+        android:id="@+id/hijriCalenderFragment"
+        android:name="com.mohtdon.ui.hijriCalender.HijriCalenderFragment"
+        android:label="fragment_hijri_calender"
+        tools:layout="@layout/fragment_hijri_calender" />
+    <fragment
+        android:id="@+id/hadithCategoryFragment"
+        android:name="com.mohtdon.ui.hadith.hadithCategory.HadithCategoryFragment"
+        android:label="HadithCategoryFragment" >
+        <action
+            android:id="@+id/action_hadithCategoryFragment_to_hadithBookChaptersFragment"
+            app:destination="@id/hadithBookChaptersFragment" />
+    </fragment>
+
 </navigation>

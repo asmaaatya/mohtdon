@@ -1,6 +1,46 @@
 <resources>
 
-    <string name="app_name">quran</string>
+    <string name="app_name">مهتدون</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="surah_name">surah name</string>
+    <string name="ayat_num">ayat number</string>
+    <string name="arabic_language">arabic language</string>
+    <string name="english_language">english language</string>
+    <string name="home">Home</string>
+    <string name="quran">Quran</string>
+    <string name="more">More</string>
+    <string name="fmradio">Radio</string>
+    <string name="reciters">Reciters</string>
+    <string name="next_prayer">next prayer</string>
+    <string name="all_prayers">All prayers</string>
+    <string name="Qibla">Qibla</string>
+    <string name="search_with_aya">search with aya</string>
+    <string name="setting">setting</string>
+    <string name="track">track</string>
+
+    <string name="do_you_pray_fajr">do you pray fajr?</string>
+    <string name="do_you_pray_dhuhr">do you pray duhr?</string>
+    <string name="do_you_pray_asr">do you pray asr?</string>
+    <string name="do_you_pray_maghrib">do you pray maghrib?</string>
+    <string name="do_you_pray_isha">do you pray isha?</string>
+    <string name="home_welcome_text">welcome</string>
+    <string name="track_prayer">prayer tracker</string>
+
+    <string name="fajr"> صلاة الفجر</string>
+    <string name="dhuhr"> صلاةالضهر</string>
+    <string name="asr"> صلاة العصر</string>
+    <string name="maghrib"> صلاة المغرب</string>
+    <string name="isha"> صلاة العشاء</string>
+
+    <string name="home_rv_item_text_1">المصحف</string>
+    <string name="home_rv_item_text_2">الأذكار</string>
+    <string name="home_rv_item_text_3">الأدعية</string>
+    <string name="home_rv_item_text_4">الأحاديث</string>
+    <string name="home_rv_item_text_5">التفسير</string>
+    <string name="home_rv_item_text_6">المزيد</string>
+    <string name="moshaf">المصحف</string>
+    <string name="search">بحث</string>
+    <string name="allah">الله</string>
+
 </resources>

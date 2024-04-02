@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context="com.mohtdon.ui.namesOfAllah.fragments.NamesOfAllahFragment">
+
+        <include
+            android:id="@+id/page_header"
+            layout="@layout/common_header" />
+
+        <GridView
+            android:id="@+id/allahNames_GV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/page_header"
+            android:numColumns="4"
+            android:horizontalSpacing="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page_header"
+            tools:listitem="@layout/names_of_allah_list_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
